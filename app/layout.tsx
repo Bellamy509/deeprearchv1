@@ -8,10 +8,10 @@ import { DeepResearchProvider } from '@/lib/deep-research-context';
 import './globals.css';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://extract.chat'),
-  title: 'Deep Research - by David',
+  metadataBase: new URL('https://deepresearch.david.com'),
+  title: 'Deep Research by David - AI-Powered Web Research',
   description:
-    'Deep Research allows you to extract information from any website with the help of an AI chatbot.',
+    'Deep Research by David allows you to extract and analyze information from any website with the help of advanced AI technology.',
 };
 
 export const viewport = {
