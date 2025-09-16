@@ -186,7 +186,7 @@ export async function POST(request: Request) {
         system: systemPrompt,
         messages: coreMessages,
         maxSteps: 10,
-        experimental_activeTools: experimental_deepResearch ? allTools : firecrawlTools,
+        experimental_activeTools: experimental_deepResearch ? ['deepResearch'] : firecrawlTools,
         tools: {
           search: {
             description:

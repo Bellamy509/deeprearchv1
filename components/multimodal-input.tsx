@@ -27,8 +27,7 @@ import { SuggestedActions } from './suggested-actions';
 import equal from 'fast-deep-equal';
 import { useDeepResearch } from '@/lib/deep-research-context';
 import { DeepResearch } from './deep-research';
-import { Telescope, Search } from 'lucide-react';
-import { Tabs, TabsList, TabsTrigger } from './ui/tabs';
+import { Telescope } from 'lucide-react';
 
 type SearchMode = 'search' | 'deep-research';
 
@@ -279,26 +278,13 @@ function PureMultimodalInput({
 
       <div className="absolute bottom-0 p-2 flex flex-row gap-2 justify-start items-center">
         <AttachmentsButton fileInputRef={fileInputRef} isLoading={isLoading} />
-        <Tabs value={searchMode} onValueChange={(value) => {
-          setSearchMode(value as SearchMode);
-        }}>
-          <TabsList className="bg-transparent border rounded-full p-1 h-fit">
-            <TabsTrigger 
-              value="search" 
-              className="rounded-full px-3 py-1.5 h-fit flex items-center gap-2 data-[state=inactive]:bg-transparent data-[state=active]:bg-orange-50 hover:bg-orange-50/50 data-[state=active]:text-orange-600 border-0 data-[state=active]:shadow-none transition-colors"
-            >
-              <Search size={14} />
-              Search
-            </TabsTrigger>
-            <TabsTrigger 
-              value="deep-research"
-              className="rounded-full px-3 py-1.5 h-fit flex items-center gap-2 data-[state=inactive]:bg-transparent data-[state=active]:bg-orange-50 hover:bg-orange-50/50 data-[state=active]:text-orange-600 border-0 data-[state=active]:shadow-none transition-colors"
-            >
-              <Telescope size={14} />
-              Deep Research
-            </TabsTrigger>
-          </TabsList>
-        </Tabs>
+        {/* Search button removed - only Deep Research mode available */}
+        <div className="bg-transparent border rounded-full p-1 h-fit">
+          <div className="rounded-full px-3 py-1.5 h-fit flex items-center gap-2 bg-orange-50 text-orange-600 transition-colors">
+            <Telescope size={14} />
+            Deep Research
+          </div>
+        </div>
       </div>
 
       <div className="absolute bottom-0 right-0 p-2 w-fit flex flex-row justify-end">
