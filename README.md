@@ -11,9 +11,7 @@ Check out the demo [here](https://x.com/nickscamara_/status/1886459999905521912)
 - [Firecrawl](https://firecrawl.dev) Search + Extract
   - Feed realtime data to the AI via search
   - Extract structured data from multiple websites via extract
-- [Next.js](https://nextjs.org) App Router
-  - Advanced routing for seamless navigation and performance
-  - React Server Components (RSCs) and Server Actions for server-side rendering and increased performance
+- ents (RSCs) and Server Actions for server-side rendering and increased performance
 - [AI SDK](https://sdk.vercel.ai/docs)
   - Unified API for generating text, structured objects, and tool calls with LLMs
   - Hooks for building dynamic chat and generative user interfaces
